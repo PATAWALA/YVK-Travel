@@ -55,7 +55,7 @@ export function Navbar() {
           >
             <div className="relative w-10 h-10 md:w-11 md:h-11 rounded-full overflow-hidden bg-white ring-2 ring-gold-400/40">
               <Image
-                src="/logo.jpg"
+                src="/images/logo.jpg"
                 alt="YVK Travel"
                 fill
                 sizes="44px"
