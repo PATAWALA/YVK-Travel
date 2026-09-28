@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/sections/Navbar";
-import { FrictionBanner } from "@/components/sections/FrictionBanner";
 import { Hero } from "@/components/sections/Hero";
 import { PreQualifier } from "@/components/sections/PreQualifier";
 import { ComparisonTable } from "@/components/sections/ComparisonTable";
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white pb-20 md:pb-0">
       <Navbar />
-      <FrictionBanner />
       <Hero />
       <PreQualifier />
       <ComparisonTable />
