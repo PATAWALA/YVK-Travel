@@ -11,7 +11,7 @@ export function Hero() {
     document.getElementById("destinations")?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-night-900 via-night-700 to-night-900 text-white">
+    <section className="relative overflow-hidden bg-gradient-to-b from-night-900 via-night-700 to-night-900 text-white pt-16 md:pt-18">
       {/* Décor radial */}
       <div
         className="absolute inset-0 opacity-20 pointer-events-none"
@@ -21,27 +21,7 @@ export function Hero() {
         }}
       />
 
-      {/*
-        ─────────────────────────────────────────────
-        BARRE DE FRICTION (intégrée au Hero)
-        ─────────────────────────────────────────────
-        pt-16 md:pt-18 sur la section → l'espace est réservé pour le navbar
-        fixe (h-16 / h-18). Le banner apparaît donc JUSTE en-dessous du navbar.
-      */}
-      <div className="relative bg-gradient-to-r from-gold-500/15 via-gold-400/10 to-gold-500/15 border-b border-gold-400/20 backdrop-blur-sm pt-16 md:pt-18">
-        <div className="max-w-5xl mx-auto px-5 py-2.5 text-center">
-          <p className="text-xs md:text-sm leading-snug">
-            <Plane className="w-3.5 h-3.5 inline-block mr-1.5 text-gold-400 -mt-0.5" />
-            <strong className="text-gold-400">Ton visa, sans stress.</strong>{" "}
-            <span className="text-white/85">
-              Pré-qualifie ton dossier en 45 secondes — un conseiller YVK te recontacte.
-            </span>
-          </p>
-        </div>
-      </div>
-
-      {/* Contenu principal du Hero */}
-      <div className="relative max-w-5xl mx-auto px-5 pt-10 pb-14 md:pt-14 md:pb-24">
+      <div className="relative max-w-5xl mx-auto px-5 pt-10 pb-14 md:pt-16 md:pb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
